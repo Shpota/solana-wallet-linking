@@ -14,11 +14,10 @@
   "author": "Sasha Shpota",
   "license": "MIT",
   "dependencies": {
-    "@babel/core": "^7.21.5",
-    "bs58": "^5.0.0",
-    "parcel": "^2.8.3"
+    "bs58": "^5.0.0"
   },
   "devDependencies": {
-    "buffer": "^5.7.1"
+    "buffer": "^5.7.1",
+    "parcel": "^2.8.3"
   }
 }
