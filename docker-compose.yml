@@ -1,0 +1,6 @@
+version: '3'
+services:
+  solana-wallet-linking:
+    build: .
+    ports:
+      - "8080:8080"
