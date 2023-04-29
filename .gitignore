@@ -37,3 +37,6 @@ bin/
 
 ### Mac OS ###
 .DS_Store
+/src/main/resources/public/
+/client/.parcel-cache/
+/client/node_modules/
