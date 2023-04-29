@@ -1,0 +1,24 @@
+{
+  "name": "verify-sol-sign",
+  "version": "1.0.0",
+  "description": "An example of verify a Solana wallet signature on the backend",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html --dist-dir ../src/main/resources/public",
+    "clean-build": "rm -rf .parcel-cache && rm -rf ../src/main/resources/public && parcel build index.html --dist-dir ../src/main/resources/public"
+  },
+  "keywords": [
+    "solana",
+    "sol4k"
+  ],
+  "author": "Sasha Shpota",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.21.5",
+    "bs58": "^5.0.0",
+    "parcel": "^2.8.3"
+  },
+  "devDependencies": {
+    "buffer": "^5.7.1"
+  }
+}
