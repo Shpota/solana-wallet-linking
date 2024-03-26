@@ -24,7 +24,7 @@ public class Main {
     }
 
     public static Boolean verifySignature(String signature, String walletAddress) {
-        String message = "You are verifying you wallet with sol4k";
+        String message = "You are verifying your wallet with sol4k";
         byte[] messageBytes = message.getBytes();
         PublicKey publicKey = new PublicKey(walletAddress);
         byte[] signatureBytes = Base58.decode(signature);
