@@ -10,7 +10,7 @@ const getProvider = () => {
 
 const render = async () => {
     const provider = getProvider();
-    if (provider.isConnected) {
+    if (provider?.isConnected) {
         const html = `
             <h1>Your Wallet:</h1> 
             <div>${provider.publicKey.toString()}</div>
@@ -32,7 +32,7 @@ const connectPhantom = async () => {
 
 const signMessage = async () => {
     const provider = getProvider();
-    const encodedMessage = new TextEncoder().encode('You are verifying you wallet with sol4k');
+    const encodedMessage = new TextEncoder().encode('You are verifying your wallet with sol4k');
     const signedMessage = await provider.signMessage(encodedMessage, "utf8");
     const base58 = await import("bs58");
     const walletAddress = provider.publicKey.toString();
